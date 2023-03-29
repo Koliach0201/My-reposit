@@ -11,3 +11,40 @@ int main()
     cout << "Их сумма равна" << a + b;          // оператор вывода
     return 0;
 }
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1, num2;
+    char op;
+    float result;
+
+    // Get input from user
+    cout << "Please enter an expression in the format of a + b or a - b or a * b or a / b:" << endl;
+    cin >> num1 >> op >> num2;
+
+    // Calculate result based on operator
+    switch (op) {
+        case '+':
+            result = num1 + num2;
+            break;
+        case '-':
+            result = num1 - num2;
+            break;
+        case '*':
+            result = num1 * num2;
+            break;
+        case '/':
+            result = (float) num1 / num2;
+            break;
+        default:
+            cout << "Invalid operator" << endl;
+            return 1;
+    }
+
+    // Output result
+    cout << "Result: " << result << endl;
+
+    return 0;
+}
