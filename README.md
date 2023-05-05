@@ -1,6 +1,7 @@
 # My-reposit 
 
 Менеджер паролей:
+EasyEDA - KolyaS0201 hv68724KOijwmd
 Mailapp.mail.ru - yakolyasidorov@mail.ru lesnaya33
 Github.com - Koliach AT2aNuJDXv3W33e
 Leader-id.ru - n89644283394@gmail.com 5w7ioqjsi
