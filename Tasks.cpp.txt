@@ -1,0 +1,85 @@
+#include <iostream>
+#include <thread>
+#include <iomanip>
+#include <math.h>
+
+using namespace std;
+
+/* void foo()
+{
+    setlocale(LC_ALL, "Russian");
+    int a, b;                                           // описание переменных
+    cout << "Введите 2 целых числа" << endl;            // оператор вывода
+    cin >> a >> b;                                      // оператор ввода
+    cout << "Их сумма равна " << a + b << endl;         // оператор вывода
+}
+
+void foo2()
+{
+    setlocale(LC_ALL, "Russian");
+    int x;
+    double y;                                           // описание переменных
+    cout << "Укажите значение x" << endl;               // оператор вывода
+    cin >> x;
+    y = (pow(x, 2) + sin(x + 1)) / 25;                  // оператор ввода
+    cout << "y = " << setprecision(5) << y << endl;     // оператор вывода
+}
+
+void foo3()
+{
+    setlocale(LC_ALL, "Russian");
+    float p, s;
+    cout << "Введите периметр квадрата: ";
+    cin >> p;
+    s = pow(p/4, 2);
+    cout << "Площадь данного квадрата = " << s << endl;
+}
+
+void foo4()
+{
+    setlocale(LC_ALL, "Russian");
+    int x;
+    cout << "Введите x";
+    cin >> x;
+    (x % 2 == 0) ? cout << "четное\n" : cout << "нечетное\n"; // 1 
+} */ // Примеры
+void foo()
+{
+    cout << "1." << setw(10) << "Sidorov" << endl;
+    cout << "2." << setw(10) << left << "Sidorov" << endl;
+    cout << "3." << setw(10) << right << "Sidorov" << endl;
+}
+
+void foo2()
+{
+    setlocale(LC_ALL, "Russian");
+    int x;
+    double y;
+    cout << "Укажите значение x" << endl;
+    cin >> x;
+    y = 10 * sin(x) + abs(pow(x, 4) - pow(x, 5));
+    cout << "y = " << setprecision(3) << y << endl;
+}
+
+void foo3()
+{
+    setlocale(LC_ALL, "Russian");
+    int x;
+    double y;
+    cout << "Укажите значение x" << endl;
+}
+int main()
+{
+    /*thread t1(foo);
+    thread t2(foo2);
+    t1.join();
+    t2.join();*/
+    foo();
+    cout << endl;
+    foo2();
+    cout << endl;
+    foo3();
+    cout << endl;
+    /*foo4();*/
+    return 0;
+}
